@@ -7,8 +7,8 @@ Este projeto prevê o fechamento da ação **PETR4.SA (Petrobras)** utilizando *
 ## 📁 Estrutura do Projeto
 
 ```
-├── app.py                 # API FastAPI para servir previsões
-├── treina_modelo.py       # Script de captura de dados, treino e serialização do modelo
+├── api.py                 # API FastAPI para servir previsões
+├── capture_and_train.py       # Script de captura de dados, treino e serialização do modelo
 ├── modelo.pkl             # Modelo Prophet serializado com pickle
 ├── date.YYYY-MM-DD        # Arquivo que armazena a última data dos dados
 ├── dados.csv              # Dados históricos (Date, Close)
@@ -34,7 +34,7 @@ docker compose up --build
 
 Acesse em:
 ```
-http://localhost/docs
+http://34.55.101.243/predict
 ```
 
 ---
